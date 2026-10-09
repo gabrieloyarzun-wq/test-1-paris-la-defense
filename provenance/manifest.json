@@ -1,0 +1,44 @@
+{
+  "gtfs.zip": {
+    "source": "https://www.data.gouv.fr/api/1/datasets/r/413988ed-d340-467b-8be2-7b999fcd207a",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:08+00:00",
+    "bytes": 151694394,
+    "sha256": "59c79d57e244d874c7c0a8592c1076d5a0059394359688d051429b0b16e2e3b5"
+  },
+  "communes.geojson": {
+    "source": "https://geo.api.gouv.fr/epcis/200054781/communes?fields=nom,code&format=geojson&geometry=contour",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:09+00:00",
+    "bytes": 500902,
+    "sha256": "3c4ce902cebf09555eaf5b934392ca52e7327435fba3ed01fb2a5b4807711320"
+  },
+  "arrondissements.geojson": {
+    "source": "https://geo.api.gouv.fr/communes?type=arrondissement-municipal&codeParent=75056&fields=nom,code&format=geojson&geometry=contour",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:09+00:00",
+    "bytes": 39725,
+    "sha256": "f5b704aece4b82c236f79e24474f159b8f206715fe363c8bfc7079a00f7ae0e9"
+  },
+  "osm_water_parks.json": {
+    "source": "Overpass API: [out:json][timeout:180];(relation[\"natural\"=\"water\"](48.67,1.92,49.11,2.56);way[\"natural\"=\"water\"](48.67,1.92,49.11,2.56);relation[\"leisure\"=\"park\"](48.83,2.16,48.95,2.32);way[\"leisure\"=\"park\"](48.83,2.16,48.95,2.32););out geom;",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:22+00:00",
+    "bytes": 11131918,
+    "sha256": "3db3c2b98f8da68c30f51d10f54c35669d4f6064fa23689dbba2f4d294d5d28f"
+  },
+  "osm_rivers.json": {
+    "source": "Overpass API: [out:json][timeout:110];way[\"waterway\"=\"river\"][\"name\"~\"^(La\\ Seine)( - .*)?$\"][\"tunnel\"!~\".\"](48.67,1.92,49.11,2.56);out geom;",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:55+00:00",
+    "bytes": 168863,
+    "sha256": "855726323d59c46a55ff659f66af7da82c483246e4ac435106c90bc051d47b19"
+  },
+  "river-context-upstream.json": {
+    "source": "https://github.com/camilleroux/montpellier-temps-transport/blob/bdc6420d3d8482d04f071f109baca87e57868fc0/site/data/paris.json",
+    "how": "upstream-derived-snapshot",
+    "fetchedAt": "2026-10-08T18:15:33+00:00",
+    "bytes": 32306,
+    "sha256": "231e2d3697873060bc479e2f6fd536fc75c5d7fe7e01ac8e645e491fcf374162"
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "city": "Paris Ouest · La Défense",
+  "builtAt": "2026-10-08T18:16:42+00:00",
+  "referenceDate": "2026-10-08",
+  "serviceWindow": "7h–20h",
+  "gtfs": {
+    "network": "Île-de-France Mobilités",
+    "dataset": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
+    "source": "https://www.data.gouv.fr/api/1/datasets/r/413988ed-d340-467b-8be2-7b999fcd207a",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:08+00:00",
+    "bytes": 151694394,
+    "sha256": "59c79d57e244d874c7c0a8592c1076d5a0059394359688d051429b0b16e2e3b5",
+    "feedInfo": null,
+    "servicePeriod": [
+      "2026-10-05",
+      "2026-11-06"
+    ]
+  },
+  "communes": {
+    "metropole": "Métropole du Grand Paris",
+    "epci": "200054781",
+    "source": "https://geo.api.gouv.fr/epcis/200054781/communes?fields=nom,code&format=geojson&geometry=contour",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:09+00:00",
+    "bytes": 500902,
+    "sha256": "3c4ce902cebf09555eaf5b934392ca52e7327435fba3ed01fb2a5b4807711320"
+  },
+  "arrondissements": {
+    "source": "https://geo.api.gouv.fr/communes?type=arrondissement-municipal&codeParent=75056&fields=nom,code&format=geojson&geometry=contour",
+    "how": "download",
+    "fetchedAt": "2026-10-08T13:29:09+00:00",
+    "bytes": 39725,
+    "sha256": "f5b704aece4b82c236f79e24474f159b8f206715fe363c8bfc7079a00f7ae0e9"
+  },
+  "openStreetMap": {
+    "licence": "ODbL, © contributeurs OpenStreetMap",
+    "riverContextSnapshot": {
+      "source": "https://github.com/camilleroux/montpellier-temps-transport/blob/bdc6420d3d8482d04f071f109baca87e57868fc0/site/data/paris.json",
+      "how": "upstream-derived-snapshot",
+      "fetchedAt": "2026-10-08T18:15:33+00:00",
+      "bytes": 32306,
+      "sha256": "231e2d3697873060bc479e2f6fd536fc75c5d7fe7e01ac8e645e491fcf374162"
+    },
+    "osm_water_parks": {
+      "source": "Overpass API: [out:json][timeout:180];(relation[\"natural\"=\"water\"](48.67,1.92,49.11,2.56);way[\"natural\"=\"water\"](48.67,1.92,49.11,2.56);relation[\"leisure\"=\"park\"](48.83,2.16,48.95,2.32);way[\"leisure\"=\"park\"](48.83,2.16,48.95,2.32););out geom;",
+      "how": "download",
+      "fetchedAt": "2026-10-08T13:29:22+00:00",
+      "bytes": 11131918,
+      "sha256": "3db3c2b98f8da68c30f51d10f54c35669d4f6064fa23689dbba2f4d294d5d28f"
+    },
+    "osm_rivers": {
+      "source": "Overpass API: [out:json][timeout:110];way[\"waterway\"=\"river\"][\"name\"~\"^(La\\ Seine)( - .*)?$\"][\"tunnel\"!~\".\"](48.67,1.92,49.11,2.56);out geom;",
+      "how": "download",
+      "fetchedAt": "2026-10-08T13:29:55+00:00",
+      "bytes": 168863,
+      "sha256": "855726323d59c46a55ff659f66af7da82c483246e4ac435106c90bc051d47b19"
+    }
+  },
+  "railGeometry": "GTFS shapes.txt",
+  "excludedRoutes": [],
+  "network": {
+    "lines": {
+      "bus": 900,
+      "metro": 16,
+      "tram": 14,
+      "rer": 5,
+      "train": 8,
+      "cable": 1
+    },
+    "stops": 8652,
+    "railStations": 740
+  },
+  "stats": {
+    "lines": [
+      {
+        "name": "1",
+        "mode": "metro",
+        "color": "#FFBE00",
+        "stations": 25,
+        "headway": 2.3
+      },
+      {
+        "name": "2",
+        "mode": "metro",
+        "color": "#0055C8",
+        "stations": 25,
+        "headway": 2.5
+      },
+      {
+        "name": "3",
+        "mode": "metro",
+        "color": "#6E6E00",
+        "stations": 25,
+        "headway": 2.5
+      },
+      {
+        "name": "4",
+        "mode": "metro",
+        "color": "#A0006E",
+        "stations": 29,
+        "headway": 2.4
+      },
+      {
+        "name": "5",
+        "mode": "metro",
+        "color": "#FF5A00",
+        "stations": 22,
+        "headway": 2.4
+      },
+      {
+        "name": "6",
+        "mode": "metro",
+        "color": "#82DC73",
+        "stations": 28,
+        "headway": 2.5
+      },
+      {
+        "name": "7",
+        "mode": "metro",
+        "color": "#FF82B4",
+        "stations": 38,
+        "headway": 2.4
+      },
+      {
+        "name": "8",
+        "mode": "metro",
+        "color": "#D282BE",
+        "stations": 38,
+        "headway": 3.1
+      },
+      {
+        "name": "9",
+        "mode": "metro",
+        "color": "#D2D200",
+        "stations": 37,
+        "headway": 2.5
+      },
+      {
+        "name": "10",
+        "mode": "metro",
+        "color": "#DC9600",
+        "stations": 23,
+        "headway": 3.7
+      },
+      {
+        "name": "11",
+        "mode": "metro",
+        "color": "#6E491E",
+        "stations": 19,
+        "headway": 2.6
+      },
+      {
+        "name": "12",
+        "mode": "metro",
+        "color": "#00643C",
+        "stations": 31,
+        "headway": 2.8
+      },
+      {
+        "name": "13",
+        "mode": "metro",
+        "color": "#82C8E6",
+        "stations": 32,
+        "headway": 2.2
+      },
+      {
+        "name": "14",
+        "mode": "metro",
+        "color": "#640082",
+        "stations": 21,
+        "headway": 2.3
+      },
+      {
+        "name": "3B",
+        "mode": "metro",
+        "color": "#82C8E6",
+        "stations": 4,
+        "headway": 3.8
+      },
+      {
+        "name": "7B",
+        "mode": "metro",
+        "color": "#82DC73",
+        "stations": 8,
+        "headway": 4.7
+      },
+      {
+        "name": "T1",
+        "mode": "tram",
+        "color": "#0055C8",
+        "stations": 37,
+        "headway": 5.4
+      },
+      {
+        "name": "T2",
+        "mode": "tram",
+        "color": "#A0006E",
+        "stations": 24,
+        "headway": 4.7
+      },
+      {
+        "name": "T4",
+        "mode": "tram",
+        "color": "#DC9600",
+        "stations": 20,
+        "headway": 8.1
+      },
+      {
+        "name": "T5",
+        "mode": "tram",
+        "color": "#640082",
+        "stations": 16,
+        "headway": 4.7
+      },
+      {
+        "name": "T6",
+        "mode": "tram",
+        "color": "#FF0000",
+        "stations": 21,
+        "headway": 5.2
+      },
+      {
+        "name": "T7",
+        "mode": "tram",
+        "color": "#6E491E",
+        "stations": 18,
+        "headway": 7.4
+      },
+      {
+        "name": "T8",
+        "mode": "tram",
+        "color": "#6E6E00",
+        "stations": 17,
+        "headway": 9.0
+      },
+      {
+        "name": "T9",
+        "mode": "tram",
+        "color": "#3C91DC",
+        "stations": 19,
+        "headway": 4.8
+      },
+      {
+        "name": "T10",
+        "mode": "tram",
+        "color": "#6E6E00",
+        "stations": 13,
+        "headway": 7.6
+      },
+      {
+        "name": "T11",
+        "mode": "tram",
+        "color": "#FF5A00",
+        "stations": 7,
+        "headway": 6.7
+      },
+      {
+        "name": "T12",
+        "mode": "tram",
+        "color": "#A50034",
+        "stations": 5,
+        "headway": 11.9
+      },
+      {
+        "name": "T13",
+        "mode": "tram",
+        "color": "#8D653D",
+        "stations": 12,
+        "headway": 14.1
+      },
+      {
+        "name": "T3a",
+        "mode": "tram",
+        "color": "#FF5A00",
+        "stations": 25,
+        "headway": 4.3
+      },
+      {
+        "name": "T3b",
+        "mode": "tram",
+        "color": "#00643C",
+        "stations": 33,
+        "headway": 4.9
+      },
+      {
+        "name": "C1",
+        "mode": "cable",
+        "color": "#3C91DC",
+        "stations": 5,
+        "headway": 2.0
+      },
+      {
+        "name": "A",
+        "mode": "rer",
+        "color": "#EB2132",
+        "stations": 36,
+        "headway": 5.8
+      },
+      {
+        "name": "B",
+        "mode": "rer",
+        "color": "#5091CB",
+        "stations": 39,
+        "headway": 5.7
+      },
+      {
+        "name": "C",
+        "mode": "rer",
+        "color": "#FFCC30",
+        "stations": 48,
+        "headway": 11.5
+      },
+      {
+        "name": "D",
+        "mode": "rer",
+        "color": "#008B5B",
+        "stations": 16,
+        "headway": 6.6
+      },
+      {
+        "name": "E",
+        "mode": "rer",
+        "color": "#B94E9A",
+        "stations": 20,
+        "headway": 12.4
+      },
+      {
+        "name": "H",
+        "mode": "train",
+        "color": "#84653D",
+        "stations": 14,
+        "headway": 13.2
+      },
+      {
+        "name": "J",
+        "mode": "train",
+        "color": "#CEC73D",
+        "stations": 20,
+        "headway": 12.4
+      },
+      {
+        "name": "K",
+        "mode": "train",
+        "color": "#9B9842",
+        "stations": 2,
+        "headway": 30.0
+      },
+      {
+        "name": "L",
+        "mode": "train",
+        "color": "#C4A4CC",
+        "stations": 32,
+        "headway": 13.2
+      },
+      {
+        "name": "N",
+        "mode": "train",
+        "color": "#00B297",
+        "stations": 12,
+        "headway": 15.0
+      },
+      {
+        "name": "P",
+        "mode": "train",
+        "color": "#F58F53",
+        "stations": 2,
+        "headway": 23.3
+      },
+      {
+        "name": "U",
+        "mode": "train",
+        "color": "#B6134C",
+        "stations": 9,
+        "headway": 20.5
+      },
+      {
+        "name": "V",
+        "mode": "train",
+        "color": "#9F9825",
+        "stations": 7,
+        "headway": 10.0
+      }
+    ],
+    "railStations": 740,
+    "busLines": 900,
+    "center": "La Défense · Grande Arche",
+    "within15": 5,
+    "within30": 44,
+    "farthestStation": "Villa Nova",
+    "farthestMinutes": 75,
+    "ogTrip": {
+      "name": "Passy",
+      "lat": 48.8575,
+      "lon": 2.28579
+    }
+  }
+}
